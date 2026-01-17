@@ -2,10 +2,10 @@
 
 A demo repository to showcase how nudeps works.
 
-## How to run
+## How to try out locally
 
 ```bash
-npm install
+git clone https://github.com/nudeps/nudeps-demo.git && cd nudeps-demo && npm install
 ```
 
 That's it!
