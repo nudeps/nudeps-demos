@@ -28,5 +28,4 @@ rebase(map.imports);
 for (let scope in map.scopes) rebase(map.scopes[scope]);
 cS.after(Object.assign(document.createElement("script"), { type: "importmap", textContent: JSON.stringify(map) }));
 
-
 })();
