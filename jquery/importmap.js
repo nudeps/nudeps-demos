@@ -2,11 +2,11 @@
 let map = {
 	"imports": {
 		"cjs-browser-shim": "./client_modules/cjs-browser-shim/index.js",
-		"jquery1": "./client_modules/jquery1@1.12.4/dist/jquery.js",
-		"jquery4": "./client_modules/jquery4@4.0.0/dist-module/jquery.module.js",
-		"jquery4/factory": "./client_modules/jquery4@4.0.0/dist-module/jquery.factory.module.js",
-		"jquery4/factory-slim": "./client_modules/jquery4@4.0.0/dist-module/jquery.factory.slim.module.js",
-		"jquery4/slim": "./client_modules/jquery4@4.0.0/dist-module/jquery.slim.module.js"
+		"jquery": "./client_modules/jquery@4.0.0/dist-module/jquery.module.js",
+		"jquery/factory": "./client_modules/jquery@4.0.0/dist-module/jquery.factory.module.js",
+		"jquery/factory-slim": "./client_modules/jquery@4.0.0/dist-module/jquery.factory.slim.module.js",
+		"jquery/slim": "./client_modules/jquery@4.0.0/dist-module/jquery.slim.module.js",
+		"jquery1": "./client_modules/jquery1@1.12.4/dist/jquery.js"
 	}
 };
 let cS = document.currentScript;
