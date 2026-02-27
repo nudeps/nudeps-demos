@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>D3 &bull; Nudeps Demos</title>
+
+	<script src="importmap.js"></script>
+	<script type="module">
+		import * as d3 from "d3";
+
+		const svg = d3
+			.select("body")
+			.append("svg")
+			.attr("width", 300)
+			.attr("height", 150);
+
+		svg.append("circle")
+			.attr("cx", 150)
+			.attr("cy", 75)
+			.attr("r", 50)
+			.attr("fill", "steelblue");
+
+		svg.append("text")
+			.attr("x", 150)
+			.attr("y", 80)
+			.attr("text-anchor", "middle")
+			.attr("font-size", "1.1rem")
+			.attr("fill", "white")
+			.text("D3 Works!");
+	</script>
+</head>
+
+<body></body>
+
+</html>
