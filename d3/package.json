@@ -1,0 +1,16 @@
+{
+	"name": "nudeps-demo-d3",
+	"version": "0.0.1",
+	"description": "A demo repository to showcase how nudeps works with D3",
+	"license": "MIT",
+	"author": "Dmitry Sharabin",
+	"scripts": {
+		"dependencies": "npx nudeps"
+	},
+	"devDependencies": {
+		"nudeps": "latest"
+	},
+	"dependencies": {
+		"d3": "^7.9.0"
+	}
+}
