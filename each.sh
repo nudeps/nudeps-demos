@@ -13,7 +13,7 @@ root="$(cd "$(dirname "$0")" && pwd)"
 for dir in "$root"/*/; do
 	name=$(basename "$dir")
 	case "$name" in
-		node_modules|client_modules|.nudeps) continue ;;
+		node_modules|client_modules|.nudeps|.claude) continue ;;
 	esac
 
 	echo "==> $name"
