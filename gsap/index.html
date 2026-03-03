@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nudeps Demo: GSAP</title>
+
+	<script src="importmap.js"></script>
+	<script type="module" src="index.js"></script>
+	<style>
+		body {
+			font-family: system-ui;
+			display: grid;
+			place-items: center;
+			min-height: 100dvh;
+			margin: 0;
+			background: #1a1a2e;
+			color: white;
+		}
+
+		h1 {
+			margin-bottom: 2rem;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 1rem;
+		}
+
+		.box {
+			width: 60px;
+			height: 60px;
+			border-radius: 12px;
+			cursor: pointer;
+		}
+
+		.box:nth-child(5n+1) { background: #e94560; }
+		.box:nth-child(5n+2) { background: #0f3460; }
+		.box:nth-child(5n+3) { background: #16c79a; }
+		.box:nth-child(5n+4) { background: #f5a623; }
+		.box:nth-child(5n+5) { background: #6c63ff; }
+	</style>
+</head>
+<body>
+	<div>
+		<h1>GSAP Animations</h1>
+		<div class="grid">
+			<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+			<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+			<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+			<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+			<div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+		</div>
+	</div>
+</body>
+</html>
