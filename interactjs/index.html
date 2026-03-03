@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nudeps Demo: interact.js</title>
+
+	<script src="importmap.js"></script>
+	<script type="module" src="index.js"></script>
+	<style>
+		body {
+			font-family: system-ui;
+			display: grid;
+			place-items: center;
+			min-height: 100dvh;
+			margin: 0;
+		}
+
+		.container {
+			width: 400px;
+			height: 400px;
+			border: 2px dashed #ccc;
+			border-radius: 8px;
+			position: relative;
+		}
+
+		.draggable {
+			width: 100px;
+			height: 100px;
+			background: royalblue;
+			color: white;
+			border-radius: 8px;
+			display: grid;
+			place-items: center;
+			cursor: grab;
+			touch-action: none;
+			user-select: none;
+		}
+
+		.draggable:active {
+			cursor: grabbing;
+		}
+	</style>
+</head>
+<body>
+	<h1>Drag me around</h1>
+	<div class="container">
+		<div class="draggable">Drag</div>
+	</div>
+</body>
+</html>
