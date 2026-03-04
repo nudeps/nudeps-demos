@@ -16,6 +16,9 @@ for dir in "$root"/*/; do
 		node_modules|client_modules|.nudeps|.claude) continue ;;
 	esac
 
-	echo "==> $name"
+	echo ""
+	echo "cd $name/ && $*"
+	echo "--------------------------------"
+	echo ""
 	(cd "$dir" && eval "$*")
 done
