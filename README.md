@@ -29,3 +29,29 @@ Use `each.sh` to run any command in every demo subdirectory:
 ./each.sh npm link nudeps
 ./each.sh "npm install && npm link nudeps"
 ```
+
+### Useful commands
+
+Install all dependencies for all demos:
+
+```bash
+./each.sh npm install
+```
+
+Run Nudeps on all demos:
+
+```bash
+./each.sh npx nudeps
+```
+
+Run Nudeps from scratch on all demos:
+
+```bash
+./each.sh npx nudeps --init
+```
+
+Try demos with a local nudeps install:
+
+```bash
+./each.sh npm link nudeps
+```
