@@ -1,24 +1,21 @@
 #!/bin/bash
 # Run a command in every demo subdirectory
-
-if [ $# -eq 0 ]; then
-	echo "Usage: $0 <command> [args...]"
-	echo "Examples: $0 npm link nudeps"
-	echo "          $0 \"npm install && npm link nudeps\""
-	exit 1
-fi
+# With no arguments, lists all demo directories (one per line).
 
 root="$(cd "$(dirname "$0")" && pwd)"
 
-for dir in "$root"/*/; do
-	name=$(basename "$dir")
-	case "$name" in
-		node_modules|client_modules|.nudeps|.claude) continue ;;
-	esac
+# Demo directory list sourced from list.js
+demos=$("$root/list.js")
 
+if [ $# -eq 0 ]; then
+	echo "$demos"
+	exit 0
+fi
+
+for name in $demos; do
 	echo ""
 	echo "cd $name/ && $*"
 	echo "--------------------------------"
 	echo ""
-	(cd "$dir" && eval "$*")
+	(cd "$root/$name" && eval "$*")
 done
