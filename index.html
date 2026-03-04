@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nudeps Demos</title>
+<style>
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font: 100%/1.5 system-ui, sans-serif;
+}
+
+body {
+	margin: 0;
+	height: 100dvh;
+	display: grid;
+	grid-template-columns: 12rem 1fr;
+}
+
+nav {
+	padding: 1rem;
+	background: #1a1a2e;
+	color: white;
+	overflow-y: auto;
+
+	h2 {
+		margin: 0 0 .75rem;
+		font-size: 1.1rem;
+	}
+
+	a {
+		display: block;
+		padding: .4rem .6rem;
+		color: inherit;
+		text-decoration: none;
+		border-radius: .3rem;
+
+		&:hover, &.active {
+			background: #16213e;
+		}
+
+		&.active {
+			font-weight: bold;
+			background: #0f3460;
+		}
+	}
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+</style>
+</head>
+<body>
+<nav>
+	<h2>Demos</h2>
+</nav>
+<iframe name="demo" src="about:blank"></iframe>
+<script>
+fetch("demos.txt")
+	.then(r => r.text())
+	.then(text => {
+		const nav = document.querySelector("nav");
+		const demos = text.trim().split("\n").filter(Boolean);
+
+		nav.insertAdjacentHTML("beforeend",
+			demos.map(name => `<a href="${name}/" target="demo">${name}</a>`).join("\n")
+		);
+
+		nav.addEventListener("click", e => {
+			const a = e.target.closest("a");
+			if (!a) return;
+			nav.querySelector("a.active")?.classList.remove("active");
+			a.classList.add("active");
+		});
+
+		// Load first demo by default
+		if (demos.length) {
+			const first = nav.querySelector("a");
+			first.classList.add("active");
+			document.querySelector("iframe").src = first.href;
+		}
+	});
+</script>
+</body>
+</html>

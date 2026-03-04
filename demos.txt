@@ -1,0 +1,11 @@
+d3
+floating-ui
+gsap
+interactjs
+jquery
+lit
+lodash
+react
+three
+underscore
+vue
