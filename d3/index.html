@@ -8,10 +8,9 @@
 
 	<script src="importmap.js"></script>
 	<script type="module">
-		import * as d3 from "d3";
+		import { select } from "d3-selection";
 
-		const svg = d3
-			.select("body")
+		const svg = select("body")
 			.append("svg")
 			.attr("width", 300)
 			.attr("height", 150);
