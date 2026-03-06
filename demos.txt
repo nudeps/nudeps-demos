@@ -5,6 +5,7 @@ interactjs
 jquery
 lit
 lodash
+open-props
 react
 three
 underscore
