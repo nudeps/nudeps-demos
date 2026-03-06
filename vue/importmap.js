@@ -3,9 +3,8 @@ let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
-		"cjs-browser-shim": "./client_modules/cjs-browser-shim/index.js",
 		"nudeps-demo-vue": "./index.js",
-		"vue": "./client_modules/vue@3.5.26/dist/vue.runtime.esm-browser.prod.js",
+		"vue": "./client_modules/vue@3.5.26/dist/vue.esm-browser.prod.js",
 		"vue/compiler-sfc": "./client_modules/vue@3.5.26/compiler-sfc/index.browser.mjs",
 		"vue/jsx": "./client_modules/vue@3.5.26/jsx.d.ts",
 		"vue/jsx-dev-runtime": "./client_modules/vue@3.5.26/jsx-runtime/index.mjs",
@@ -16,7 +15,7 @@ let map = {
 		"@vue/compiler-sfc": "./client_modules/@vue/compiler-sfc@3.5.26/dist/compiler-sfc.esm-browser.js",
 		"@vue/runtime-dom": "./client_modules/@vue/runtime-dom@3.5.26/dist/runtime-dom.esm-browser.js",
 		"@vue/server-renderer": "./client_modules/@vue/server-renderer@3.5.26/dist/server-renderer.esm-bundler.js",
-		"@vue/shared": "./client_modules/@vue/shared@3.5.26/index.js",
+		"@vue/shared": "./client_modules/@vue/shared@3.5.26/dist/shared.esm-bundler.js",
 		"@vue/compiler-core": "./client_modules/@vue/compiler-core@3.5.26/dist/compiler-core.esm-bundler.js"
 	},
 	"scopes": {}
