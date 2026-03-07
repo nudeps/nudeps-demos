@@ -4,6 +4,7 @@
 	"description": "A demo repository to showcase how nudeps works with Open Props, including external aliases",
 	"license": "MIT",
 	"author": "Lea Verou",
+	"type": "module",
 	"scripts": {
 		"dependencies": "npx nudeps"
 	},
