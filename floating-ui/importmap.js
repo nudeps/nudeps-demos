@@ -1,12 +1,14 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
-		"@floating-ui/core": "./client_modules/@floating-ui/core@1.7.3/dist/floating-ui.core.mjs",
-		"@floating-ui/dom": "./client_modules/@floating-ui/dom@0.5.4/dist/floating-ui.dom.browser.min.mjs",
-		"@floating-ui/": "./client_modules/@floating-ui/",
 		"nudeps-demo-floating-ui": "./index.js",
+		"@floating-ui/core": "./client_modules/@floating-ui/core@1.7.3/dist/floating-ui.core.mjs",
+		"@floating-ui/core/package.json": "./client_modules/@floating-ui/core@1.7.3/package.json",
+		"@floating-ui/dom": "./client_modules/@floating-ui/dom@0.5.4/dist/floating-ui.dom.browser.min.mjs",
+		"@floating-ui/dom/package.json": "./client_modules/@floating-ui/dom@0.5.4/package.json",
 		"@floating-ui/utils": "./client_modules/@floating-ui/utils@0.2.10/dist/floating-ui.utils.mjs"
 	},
 	"scopes": {

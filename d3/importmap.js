@@ -1,4 +1,5 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {

@@ -1,22 +1,24 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
 		"nudeps-demo-vue": "./index.js",
-		"vue": "./client_modules/vue@3.5.26/dist/vue.esm-browser.prod.js",
-		"vue/compiler-sfc": "./client_modules/vue@3.5.26/compiler-sfc/index.browser.mjs",
-		"vue/jsx": "./client_modules/vue@3.5.26/jsx.d.ts",
-		"vue/jsx-dev-runtime": "./client_modules/vue@3.5.26/jsx-runtime/index.mjs",
-		"vue/jsx-runtime": "./client_modules/vue@3.5.26/jsx-runtime/index.mjs",
-		"vue/": "./client_modules/vue@3.5.26/",
-		"vue/server-renderer": "./client_modules/vue@3.5.26/server-renderer/index.mjs",
-		"@vue/compiler-dom": "./client_modules/@vue/compiler-dom@3.5.26/dist/compiler-dom.esm-bundler.js",
-		"@vue/compiler-sfc": "./client_modules/@vue/compiler-sfc@3.5.26/dist/compiler-sfc.esm-browser.js",
-		"@vue/runtime-dom": "./client_modules/@vue/runtime-dom@3.5.26/dist/runtime-dom.esm-browser.js",
-		"@vue/server-renderer": "./client_modules/@vue/server-renderer@3.5.26/dist/server-renderer.esm-bundler.js",
-		"@vue/shared": "./client_modules/@vue/shared@3.5.26/dist/shared.esm-bundler.js",
-		"@vue/compiler-core": "./client_modules/@vue/compiler-core@3.5.26/dist/compiler-core.esm-bundler.js"
+		"vue": "./client_modules/vue@3.5.27/dist/vue.esm-browser.prod.js",
+		"vue/compiler-sfc": "./client_modules/vue@3.5.27/compiler-sfc/index.browser.mjs",
+		"vue/jsx": "./client_modules/vue@3.5.27/jsx.d.ts",
+		"vue/jsx-dev-runtime": "./client_modules/vue@3.5.27/jsx-runtime/index.mjs",
+		"vue/jsx-runtime": "./client_modules/vue@3.5.27/jsx-runtime/index.mjs",
+		"vue/package.json": "./client_modules/vue@3.5.27/package.json",
+		"vue/server-renderer": "./client_modules/vue@3.5.27/server-renderer/index.mjs",
+		"vue/dist/": "./client_modules/vue@3.5.27/dist/",
+		"@vue/compiler-dom": "./client_modules/@vue/compiler-dom@3.5.27/dist/compiler-dom.esm-bundler.js",
+		"@vue/compiler-sfc": "./client_modules/@vue/compiler-sfc@3.5.27/dist/compiler-sfc.esm-browser.js",
+		"@vue/runtime-dom": "./client_modules/@vue/runtime-dom@3.5.27/dist/runtime-dom.esm-browser.js",
+		"@vue/server-renderer": "./client_modules/@vue/server-renderer@3.5.27/dist/server-renderer.esm-bundler.js",
+		"@vue/shared": "./client_modules/@vue/shared@3.5.27/dist/shared.esm-bundler.js",
+		"@vue/compiler-core": "./client_modules/@vue/compiler-core@3.5.27/dist/compiler-core.esm-bundler.js"
 	},
 	"scopes": {}
 };
