@@ -1,3 +1,4 @@
+bootstrap-icons
 d3
 floating-ui
 gsap
