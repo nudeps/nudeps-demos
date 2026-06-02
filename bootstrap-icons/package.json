@@ -4,6 +4,7 @@
 	"description": "A demo repository to showcase how nudeps works with Bootstrap Icons (icon font + CSS assets)",
 	"license": "MIT",
 	"author": "Lea Verou",
+	"type": "module",
 	"scripts": {
 		"dependencies": "npx nudeps",
 		"prepare": "npx nudeps"
