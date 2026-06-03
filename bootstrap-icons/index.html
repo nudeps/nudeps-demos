@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bootstrap Icons &bull; Nudeps Demos</title>
+
+	<!-- CSS @import can't use bare specifiers like JS can with import maps.
+		 The "bootstrap-icons" alias makes this path resolve to the actual package.
+		 Note: this stylesheet declares @font-face rules whose src urls point at
+		 ./fonts/*.woff2 relative to the CSS file, so the font files must travel
+		 alongside the CSS for the icons to render. -->
+	<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css" />
+	<style>
+		body {
+			font-family: system-ui, sans-serif;
+			max-inline-size: 40rem;
+			margin-inline: auto;
+			padding: 2rem;
+			line-height: 1.5;
+			color: #1a1a2e;
+		}
+
+		h1 {
+			color: #0f3460;
+		}
+
+		.card {
+			padding: 1.5rem;
+			border-radius: .75rem;
+			box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+			background: #fff;
+		}
+
+		.icons {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			margin-block-start: 1rem;
+			font-size: 2rem;
+			color: #0f3460;
+		}
+
+		code {
+			background: #eee;
+			padding: .1em .4em;
+			border-radius: .3em;
+			font-size: .85em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1><i class="bi bi-bootstrap"></i> Bootstrap Icons Demo</h1>
+	<div class="card">
+		<p>This page loads Bootstrap Icons via a <code>&lt;link&gt;</code> pointing to
+			the <code>bootstrap-icons</code> alias &mdash; a root-level symlink outside
+			<code>client_modules</code>, exactly like the Open Props demo.</p>
+		<p>Unlike Open Props, the Bootstrap Icons stylesheet pulls in
+			<code>@font-face</code> rules that reference <code>./fonts/*.woff2</code>
+			relative to the CSS. The icons below only render if those font files
+			resolve correctly through the alias.</p>
+
+		<div class="icons">
+			<i class="bi bi-heart-fill" style="color:#e63946"></i>
+			<i class="bi bi-star-fill" style="color:#f4a261"></i>
+			<i class="bi bi-emoji-smile"></i>
+			<i class="bi bi-rocket-takeoff"></i>
+			<i class="bi bi-gear-fill"></i>
+			<i class="bi bi-github"></i>
+			<i class="bi bi-lightning-charge-fill"></i>
+			<i class="bi bi-cloud-sun"></i>
+		</div>
+	</div>
+</body>
+
+</html>
