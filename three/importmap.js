@@ -1,10 +1,16 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
 		"nudeps-demo-three": "./index.js",
-		"three": "./client_modules/three@0.175.0/build/three.module.js"
+		"three": "./client_modules/three@0.175.0/build/three.module.js",
+		"three/webgpu": "./client_modules/three@0.175.0/build/three.webgpu.js",
+		"three/examples/fonts/": "./client_modules/three@0.175.0/examples/fonts/",
+		"three/examples/jsm/": "./client_modules/three@0.175.0/examples/jsm/",
+		"three/addons/": "./client_modules/three@0.175.0/examples/jsm/",
+		"three/src/": "./client_modules/three@0.175.0/src/"
 	},
 	"scopes": {}
 };

@@ -1,13 +1,16 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
-		"cjs-browser-shim": "./client_modules/cjs-browser-shim/index.js",
-		"lodash": "./client_modules/lodash@4.17.23/lodash.js",
 		"nudeps-demo-lodash": "./index.js",
-		"underscore": "./client_modules/underscore@1.13.7/modules/index-all.js",
-		"underscore/": "./client_modules/underscore@1.13.7/"
+		"cjs-browser-shim": "./client_modules/cjs-browser-shim@0.0.1/index.js",
+		"lodash": "./client_modules/lodash@4.18.1/lodash.js",
+		"underscore": "./client_modules/underscore@1.13.8/modules/index-all.js",
+		"underscore/package.json": "./client_modules/underscore@1.13.8/package.json",
+		"underscore/underscore": "./client_modules/underscore@1.13.8/underscore",
+		"underscore/modules/": "./client_modules/underscore@1.13.8/modules/"
 	},
 	"scopes": {}
 };

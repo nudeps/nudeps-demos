@@ -1,16 +1,19 @@
 (()=>{
+/* Nudeps v0.2.4 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
+		"nudeps-demo-jquery": "./index.js",
 		"jquery": "./client_modules/jquery@4.0.0/dist-module/jquery.module.js",
 		"jquery/factory": "./client_modules/jquery@4.0.0/dist-module/jquery.factory.module.js",
 		"jquery/factory-slim": "./client_modules/jquery@4.0.0/dist-module/jquery.factory.slim.module.js",
 		"jquery/slim": "./client_modules/jquery@4.0.0/dist-module/jquery.slim.module.js",
 		"jquery/src/": "./client_modules/jquery@4.0.0/src/",
-		"jquery1": "./client_modules/jquery@1.12.4/dist/jquery.js",
-		"nudeps-demo-jquery": "./index.js"
-	}
+		"cjs-browser-shim": "./client_modules/cjs-browser-shim@0.0.1/index.js",
+		"jquery1": "./client_modules/jquery@1.12.4/dist/jquery.js"
+	},
+	"scopes": {}
 };
 if (!mapUrl && !cS) {
 	throw new Error('nudeps: Import map script appears to be loaded as a module. Set module: true in nudeps config, or remove type="module" from the script tag.');

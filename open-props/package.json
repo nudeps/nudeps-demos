@@ -6,7 +6,8 @@
 	"author": "Lea Verou",
 	"type": "module",
 	"scripts": {
-		"dependencies": "npx nudeps"
+		"dependencies": "npx nudeps",
+		"prepare": "npx nudeps"
 	},
 	"devDependencies": {
 		"nudeps": "latest"
