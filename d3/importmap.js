@@ -1,5 +1,5 @@
 (()=>{
-/* Nudeps v0.2.4 */
+/* Nudeps v0.4.0 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
@@ -36,8 +36,8 @@ let map = {
 		"d3-transition": "./client_modules/d3-transition@3.0.1/src/index.js",
 		"d3-zoom": "./client_modules/d3-zoom@3.0.0/src/index.js",
 		"internmap": "./client_modules/internmap@2.0.3/src/index.js",
-		"robust-predicates": "./client_modules/robust-predicates@3.0.2/index.js",
-		"delaunator": "./client_modules/delaunator@5.0.1/index.js"
+		"robust-predicates": "./client_modules/robust-predicates@3.0.3/index.js",
+		"delaunator": "./client_modules/delaunator@5.1.0/index.js"
 	},
 	"scopes": {}
 };

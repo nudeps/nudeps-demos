@@ -1,5 +1,5 @@
 (()=>{
-/* Nudeps v0.2.4 */
+/* Nudeps v0.4.0 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
@@ -12,8 +12,7 @@ let map = {
 		"jquery/src/": "./client_modules/jquery@4.0.0/src/",
 		"cjs-browser-shim": "./client_modules/cjs-browser-shim@0.0.1/index.js",
 		"jquery1": "./client_modules/jquery@1.12.4/dist/jquery.js"
-	},
-	"scopes": {}
+	}
 };
 if (!mapUrl && !cS) {
 	throw new Error('nudeps: Import map script appears to be loaded as a module. Set module: true in nudeps config, or remove type="module" from the script tag.');

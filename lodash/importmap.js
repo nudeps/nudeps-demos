@@ -1,14 +1,13 @@
 (()=>{
-/* Nudeps v0.2.4 */
+/* Nudeps v0.4.0 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
 		"nudeps-demo-lodash": "./index.js",
 		"cjs-browser-shim": "./client_modules/cjs-browser-shim@0.0.1/index.js",
-		"lodash": "./client_modules/lodash@4.17.23/lodash.js"
-	},
-	"scopes": {}
+		"lodash": "./client_modules/lodash@4.18.1/lodash.js"
+	}
 };
 if (!mapUrl && !cS) {
 	throw new Error('nudeps: Import map script appears to be loaded as a module. Set module: true in nudeps config, or remove type="module" from the script tag.');
