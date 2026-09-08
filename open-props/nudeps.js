@@ -1,5 +1,5 @@
 export default {
-	alias: {
-		"open-props": "../open-props",
+	overrides: {
+		"open-props": { alias: "../open-props" },
 	},
 };

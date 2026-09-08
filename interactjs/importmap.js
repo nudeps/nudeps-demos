@@ -1,14 +1,13 @@
 (()=>{
-/* Nudeps v0.2.4 */
+/* Nudeps v0.4.0 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
 	"imports": {
 		"nudeps-demo-interactjs": "./index.js",
 		"cjs-browser-shim": "./client_modules/cjs-browser-shim@0.0.1/index.js",
-		"interactjs": "./client_modules/interactjs@1.10.27/dist/interact.min.js"
-	},
-	"scopes": {}
+		"interactjs": "./client_modules/interactjs@1.10.28/dist/interact.min.js"
+	}
 };
 if (!mapUrl && !cS) {
 	throw new Error('nudeps: Import map script appears to be loaded as a module. Set module: true in nudeps config, or remove type="module" from the script tag.');

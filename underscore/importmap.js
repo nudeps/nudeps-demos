@@ -1,5 +1,5 @@
 (()=>{
-/* Nudeps v0.2.4 */
+/* Nudeps v0.4.0 */
 let cS = document.currentScript;
 let mapUrl = cS?.src;
 let map = {
@@ -10,7 +10,9 @@ let map = {
 		"underscore": "./client_modules/underscore@1.13.8/modules/index-all.js",
 		"underscore/package.json": "./client_modules/underscore@1.13.8/package.json",
 		"underscore/underscore": "./client_modules/underscore@1.13.8/underscore",
-		"underscore/modules/": "./client_modules/underscore@1.13.8/modules/"
+		"underscore/modules/": "./client_modules/underscore@1.13.8/modules/",
+		"underscore/amd/": "./client_modules/underscore@1.13.8/amd/",
+		"underscore/cjs/": "./client_modules/underscore@1.13.8/cjs/"
 	},
 	"scopes": {}
 };
