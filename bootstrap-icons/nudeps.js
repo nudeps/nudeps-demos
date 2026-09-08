@@ -1,5 +1,5 @@
 export default {
-	alias: {
-		"bootstrap-icons": "../bootstrap-icons",
+	overrides: {
+		"bootstrap-icons": { alias: "../bootstrap-icons" },
 	},
 };
