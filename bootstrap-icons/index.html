@@ -11,7 +11,7 @@
 		 Note: this stylesheet declares @font-face rules whose src urls point at
 		 ./fonts/*.woff2 relative to the CSS file, so the font files must travel
 		 alongside the CSS for the icons to render. -->
-	<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css" />
+	<link rel="stylesheet" href="client_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
 	<style>
 		body {
 			font-family: system-ui, sans-serif;
@@ -55,7 +55,7 @@
 	<h1><i class="bi bi-bootstrap"></i> Bootstrap Icons Demo</h1>
 	<div class="card">
 		<p>This page loads Bootstrap Icons via a <code>&lt;link&gt;</code> pointing to
-			the <code>bootstrap-icons</code> alias &mdash; a root-level symlink outside
+			the <code>bootstrap-icons</code> alias &mdash; an unversioned symlink in
 			<code>client_modules</code>, exactly like the Open Props demo.</p>
 		<p>Unlike Open Props, the Bootstrap Icons stylesheet pulls in
 			<code>@font-face</code> rules that reference <code>./fonts/*.woff2</code>
