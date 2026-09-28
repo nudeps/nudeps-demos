@@ -8,7 +8,7 @@
 
 	<!-- CSS @import can't use bare specifiers like JS can with import maps.
 		 The "open-props" alias makes this path resolve to the actual package. -->
-	<link rel="stylesheet" href="open-props/open-props.min.css" />
+	<link rel="stylesheet" href="client_modules/open-props/open-props.min.css" />
 	<style>
 		body {
 			font-family: var(--font-sans);
@@ -70,7 +70,7 @@
 	<div class="card">
 		<p>This page uses Open Props custom properties loaded via a
 			<code>&lt;link&gt;</code> pointing to the <code>open-props</code> alias &mdash;
-			a root-level symlink outside <code>client_modules</code>.</p>
+			an unversioned symlink in <code>client_modules</code>.</p>
 		<p>CSS has no equivalent of JS import maps, so bare specifiers like
 			<code>"open-props/open-props.min.css"</code> can&rsquo;t be resolved.
 			Aliases solve this by placing a symlink at a known path.</p>
