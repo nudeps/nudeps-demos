@@ -1,0 +1,9 @@
+{
+  "name": "@nudeps-mf/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": "./index.js",
+  "peerDependencies": {
+    "lit": "^3.0.0"
+  }
+}
