@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light dark" />
+	<title>Nudeps Shop</title>
+	<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🛍️</text></svg>' />
+	<script src="importmap.js"></script>
+	<script type="module" src="index.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1>Shop</h1>
+		<!-- Filled at runtime by the cart team's widget, built separately into cart/dist/ -->
+		<cart-widget>Loading cart…</cart-widget>
+	</header>
+
+	<main>
+		<ul>
+			<li style="--hue: 30">
+				<span class="art" aria-hidden="true">🧦</span>
+				<h2>Single Left Sock</h2>
+				<ui-button data-product="Single Left Sock">Add to cart</ui-button>
+			</li>
+			<li style="--hue: 55">
+				<span class="art" aria-hidden="true">🫖</span>
+				<h2>Chocolate Teapot</h2>
+				<ui-button data-product="Chocolate Teapot">Add to cart</ui-button>
+			</li>
+			<li style="--hue: 240">
+				<span class="art" aria-hidden="true">☂️</span>
+				<h2>Mesh Umbrella</h2>
+				<ui-button data-product="Mesh Umbrella">Add to cart</ui-button>
+			</li>
+			<li style="--hue: 145">
+				<span class="art" aria-hidden="true">🔦</span>
+				<h2>Solar-Powered Flashlight</h2>
+				<ui-button data-product="Solar-Powered Flashlight">Add to cart</ui-button>
+			</li>
+			<li style="--hue: 290">
+				<span class="art" aria-hidden="true">🕶️</span>
+				<h2>Night-Vision Sunglasses</h2>
+				<ui-button data-product="Night-Vision Sunglasses">Add to cart</ui-button>
+			</li>
+			<li style="--hue: 200">
+				<span class="art" aria-hidden="true">🧊</span>
+				<h2>Pre-Melted Ice Cubes</h2>
+				<ui-button data-product="Pre-Melted Ice Cubes">Add to cart</ui-button>
+			</li>
+		</ul>
+	</main>
+</body>
+</html>

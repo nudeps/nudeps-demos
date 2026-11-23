@@ -1,0 +1,75 @@
+:root {
+	color-scheme: light dark;
+	--surface: light-dark(oklch(96% 0.01 260), oklch(26% 0.02 260));
+	font-family: system-ui, sans-serif;
+	line-height: 1.5;
+}
+
+body {
+	max-inline-size: 60rem;
+	margin: 2rem auto;
+	padding-inline: 1rem;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding-block-end: 1rem;
+	border-block-end: 1px solid color-mix(in oklab, CanvasText 20%, transparent);
+}
+
+h1 {
+	margin: 0;
+	text-wrap: balance;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(12rem, 100%), 1fr));
+	gap: 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: grid;
+	gap: 0.5rem;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	background: var(--surface);
+	container-type: inline-size;
+}
+
+.art {
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1;
+	border-radius: 0.5rem;
+	/* A pool of light behind the product, its center light enough in dark mode for dark emoji such as 🕶️ */
+	background: radial-gradient(
+		circle at 50% 40%,
+		light-dark(oklch(98% 0.03 var(--hue)), oklch(60% 0.08 var(--hue))),
+		light-dark(oklch(88% 0.07 var(--hue)), oklch(34% 0.05 var(--hue)))
+	);
+	font-size: 50cqi;
+	line-height: 1;
+	text-shadow: 0 0.06em 0.05em color-mix(in oklab, oklch(30% 0.08 var(--hue)) 35%, transparent);
+}
+
+h2 {
+	margin: 0;
+	font-size: 1rem;
+	text-wrap: balance;
+}
+
+ui-button {
+	justify-self: start;
+}
+
+ui-button[data-added] {
+	--ui-button-bg: light-dark(oklch(52% 0.17 150), oklch(74% 0.19 150));
+	--ui-button-hover-bg: light-dark(oklch(45% 0.15 150), oklch(82% 0.17 150));
+}

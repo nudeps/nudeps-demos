@@ -1,0 +1,19 @@
+{
+  "name": "nudeps-demo-module-federation",
+  "version": "0.0.1",
+  "description": "A demo repository to showcase how nudeps and Module Federation work together",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dependencies": "nudeps && npm run build:cart",
+    "prepare": "nudeps && npm run build:cart",
+    "build:cart": "cd cart && npm install && npm run build"
+  },
+  "devDependencies": {
+    "nudeps": "latest"
+  },
+  "dependencies": {
+    "@nudeps-mf/ui": "file:design-system",
+    "lit": "^3.3.2"
+  }
+}

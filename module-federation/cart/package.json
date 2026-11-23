@@ -1,0 +1,16 @@
+{
+  "name": "cart",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@nudeps-mf/ui": "file:../design-system",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.24.1",
+    "vite": "^8.3.8"
+  }
+}
